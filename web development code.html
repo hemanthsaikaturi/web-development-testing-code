@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Languages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #211522;
+    }
+
+    #languageList {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .languageBox {
+      margin: 10px;
+      padding: 20px;
+      border: 2px solid #000;
+      color: #000;
+      background-color: transparent;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
+      position: relative;
+    }
+
+    .languageBox:hover {
+      background-color: #D3B1C2;
+      color: #fff;
+    }
+
+    .languageTitle {
+      background-color: #C197D2;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px 8px 0 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .languageInfo {
+      margin-top: 30px;
+    }
+
+    .languageInfo img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <ul id="languageList">
+    <li class="languageBox" onclick="showAlert('Java')">
+      <div class="languageTitle">Java</div>
+      <div class="languageInfo">
+        <img src="java demo.png" alt="Java Logo">
+        <p>Java is a versatile, object-oriented programming language.</p>
+      </div>
+    </li>
+
+    <li class="languageBox" onclick="showAlert('HTML')">
+      <div class="languageTitle">HTML</div>
+      <div class="languageInfo">
+        <img src="html demo.jpg" alt="HTML Logo">
+        <p>HTML is the standard markup language for creating web pages.</p>
+      </div>
+    </li>
+
+    <li class="languageBox" onclick="showAlert('CSS')">
+      <div class="languageTitle">CSS</div>
+      <div class="languageInfo">
+        <img src="css.png" alt="CSS Logo">
+        <p>CSS is a stylesheet language used for describing the look and formatting of a document written in HTML.</p>
+      </div>
+    </li>
+
+
+    <li class="languageBox" onclick="showAlert('C++')">
+      <div class="languageTitle">C++</div>
+      <div class="languageInfo">
+        <img src="c++.png" alt="C++ Logo">
+        <p>C++ is a powerful pogramming language widely used for system/software development.</p>
+      </div>
+    </li>
+
+    <li class="languageBox" onclick="showAlert('Python')">
+      <div class="languageTitle">Python</div>
+      <div class="languageInfo">
+        <img src="python.png" alt="Python Logo">
+        <p>Python is known for its simplicity and readability, making it a great language for beginners.</p>
+      </div>
+    </li>
+
+    <li class="languageBox" onclick="showAlert('React')">
+      <div class="languageTitle">React</div>
+      <div class="languageInfo">
+        <img src="react demo..png" alt="React Logo">
+        <p>React is a JavaScript library for building user interfaces, particularly for single-page applications.</p>
+      </div>
+    </li>
+
+    <li class="languageBox" onclick="showAlert('Node')">
+      <div class="languageTitle">Node</div>
+      <div class="languageInfo">
+        <img src="node demo.jpeg.jpg" alt="Node.js Logo">
+        <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine for server-side development.</p>
+      </div>
+    </li>
+  </ul>
+
+  <script>
+    function showAlert(language) {
+      alert("Selected language: " + language);
+    }
+  </script>
+</body>
+</html>
